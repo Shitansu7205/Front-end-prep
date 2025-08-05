@@ -103,3 +103,42 @@
 
 // const counterApp = createCounter()
 // counterApp()
+
+
+
+// ############EVENT LOOP############
+// console.log("1"); // 🧠 synchronous
+// sayHi();          // 🧠 synchronous function
+// Promise.resolve().then(() => console.log("3")); // 📆 microtask
+// setTimeout(() => console.log("4"), 0);          // ⏰ macrotask
+// function  sayHi(){
+//     console.log("hii")
+// }
+
+
+// console.log("A");  //syn
+
+// setTimeout(() => {     //macro
+//   console.log("B");
+// }, 0);
+
+// Promise.resolve().then(() => {  //micro
+//   console.log("C");
+// });
+
+// console.log("D"); //syn
+
+
+// console.log("1");  //syan
+// setTimeout(() => {
+//   console.log("2");
+// }, 0);
+
+// Promise.resolve().then(() => {
+//   console.log("3");         //micro
+//   setTimeout(() => {    
+//     console.log("4");
+//   }, 0);
+// });
+// console.log("5");   //syan
+

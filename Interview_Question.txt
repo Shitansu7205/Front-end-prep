@@ -2,3 +2,5 @@
 2.Hoisting- For var its working but in the let and const its not working  same as in the function  , the simple function is working with the hoaiting where as the function expression is not wokign .
 3.Lexical Scopping - All inner function have the access to the values of outer function
   && Clouser - a closure is the combination of a function and the lexical environment within which that function was declared. 
+4.Event Lopping- Js workes on a single threate in the oder of . Synchronous > Function Calls> Microtasks > Macrotasks
+
