@@ -142,3 +142,87 @@
 // });
 // console.log("5");   //syan
 
+
+// ########REST AND SPREAD OPERATOR########
+
+// const arr = [1,2,3]
+// const newA = [...arr]
+// console.log(newA)
+
+// const fn = (...id)=>{
+//     console.log("Rest operator : " , id)
+// }
+// fn(234,23,4,56,7)
+
+// const colors = ["red", "blue", "green", "yellow"];
+// const [firstColor,secondColor,...all] = colors
+// console.log(firstColor,secondColor)
+
+// const a = [1, 2];
+// const b = [3, 4];
+// const merGeArr = [...a,...b]
+// console.log(merGeArr)
+
+
+// const arr = [1,2,3]
+// console.log(Math.max(...arr))
+
+
+// const fun = (...num)=>{
+//     console.log('SO THE EXTRA INPUT IS :  ', num.length-2)
+// }   
+// fun(12,2,3,4,34,45,6,76,8,5)
+
+// const arr1 = [1,2,3]
+// const arr2 = [4,5,6]
+// const merArr= [...arr1,500,...arr2]
+// console.log(merArr);
+
+// const uers = { name: "Shitansu", age: 21, roll: 3 }
+// const newUser = {...uers,age:25}
+
+// console.log(newUser);
+
+
+// const arr = ['shitansu', 'kumar', 'gochhayat']
+// const [name, ...other] = arr
+// console.log(name , other)
+
+
+// const fun = (name,title) => {
+//     const merGe = {...name,...title}
+//     console.log(merGe)
+
+// }
+// fun({ name: 'shitansu' }, { title: "Gochhayat" })
+
+
+
+//  let sum = 0
+//  let sqArr = []
+// const fun = (...num) => {
+//     console.log(num)
+//     for(let i=0;i<num.length;i++){
+//         // sum = sum + num[i]
+//         let makeSq = num[i] * num[i]
+//         sqArr.push(makeSq)
+//     }
+//      for(let i=0;i<sqArr.length;i++){
+//         sum = sum + sqArr[i]
+//      }
+// }
+// fun(1,1,1,1,1,1)
+// console.log(sum);
+// console.log(sqArr)
+
+
+// const arr = [1,22,34]
+// const newArr = [...arr,56]
+// console.log(newArr , arr)
+
+
+// const func = (a,b,...other) => {
+//     console.log(a+b)
+//     console.log(other)
+// }
+// func(...[1, 2, 3, 4, 5])

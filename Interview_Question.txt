@@ -3,4 +3,8 @@
 3.Lexical Scopping - All inner function have the access to the values of outer function
   && Clouser - a closure is the combination of a function and the lexical environment within which that function was declared. 
 4.Event Lopping- Js workes on a single threate in the oder of . Synchronous > Function Calls> Microtasks > Macrotasks
-
+5.Debouncing & Throttling (Knowing only Concept)
+6.REST and SPREAD Operator - -Both syantax(...)
+                        REST - pack the values in to a single unit.
+                        SPREAD  - Unpack the values/spread the values.
+                        
