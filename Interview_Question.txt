@@ -7,4 +7,4 @@
 6.REST and SPREAD Operator - -Both syantax(...)
                         REST - pack the values in to a single unit.
                         SPREAD  - Unpack the values/spread the values.
-                        
+7.Promises and async and await 

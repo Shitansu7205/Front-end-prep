@@ -1,1 +1,4 @@
-1.Conditional Rendering
+1.Conditional Rendering - Showing something(UI) Based upon the Condition.
+        -If else
+        -Ternari Opertor ( ? :)
+        -Logical AND (&&)

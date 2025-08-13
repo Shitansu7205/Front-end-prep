@@ -226,3 +226,101 @@
 //     console.log(other)
 // }
 // func(...[1, 2, 3, 4, 5])
+
+
+
+// #############PROMISES#############
+// console.log('a')   //ssyn
+
+// let myPromise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         console.log('c')
+//         resolve()
+//     }, 2000);
+// })
+// myPromise.then(() => console.log("Resolebe"))
+//     .catch(() => console.log("rejected"))
+//     .finally(() => console.log("Promise finished!"));
+
+// console.log('b')
+
+
+
+
+// let prom = new Promise((res, rej) => {
+//     setTimeout(() => {
+//         console.log("Done")
+//     }, 2000);
+// })
+
+
+
+// let prom = new Promise((res, rej) => {
+//     console.log("Pending state")
+//     setTimeout(() => {
+//         rej()
+//     }, 1000)
+// })
+// prom.then(() => console.log("Resolved"))
+//     .catch(() => console.log("Errpor Occured"))
+//     .finally(() => console.log("Promise Fullfilled"))
+
+
+
+
+// console.log("a");
+
+// let myPromise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve("done");
+//     }, 2000);
+// });
+
+// myPromise.then(msg => console.log(msg));
+
+// console.log("b");
+
+// let promise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         reject("error happened");
+//     }, 1000);
+// });
+
+// promise
+//     .then(msg => console.log("Resolved:", msg))
+//     .catch(err => console.log("Rejected:", err));
+
+
+
+// let p = new Promise((res, rej) => {
+//     console.log("Start Fetching.....")
+//     res()
+// })
+// p.then(async() => {
+//     const data = await fetch('https://jsonplaceholder.typicode.com/users')
+//     console.log(data)
+// })
+// console.log(p)
+
+
+
+// #############ASYNC / AWAIT#############
+
+
+// const pFunc = async()=>{
+//     console.log("Called the Function....")
+// }
+// console.log(pFunc())
+
+
+
+// const fn = async () => {
+//     console.log("Beigneing")
+//     const res = await fetch('https://jsonplaceholder.typicode.com/users', {
+//         method: 'GET'
+//     })
+//     const data = await res.json()
+//     console.log(data)
+//     console.log("Ending......")
+// }
+// fn()
