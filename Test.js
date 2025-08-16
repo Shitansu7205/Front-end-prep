@@ -324,3 +324,145 @@
 //     console.log("Ending......")
 // }
 // fn()
+
+
+// ##########ARRAY##########
+// const arr = [1,2,3,4,'cueve']
+// arr[0] = 78
+// console.log(arr.reverse())
+// let newArr = arr.slice(0,4)
+// console.log(newArr)
+
+// const arrs  = [1,2,3,65,2]
+// // console.log(arr.pop())
+
+// // console.log(arr.splice(1))
+// // console.log(arrs.lastIndexOf(2))
+// console.log(arrs.includes(65))
+
+
+// let arr = ["shitansu","kumar","gochhayat"]
+// console.log(arr.includes("shitansu"))
+
+
+
+const users = [
+    { id: 1, name: "Amit", age: 25, hobbies: ["cricket", "music"] },
+    { id: 2, name: "Riya", age: 22, hobbies: ["dance", "reading"] },
+    { id: 3, name: "Karan", age: 28, hobbies: ["football", "traveling"] },
+    { id: 4, name: "Sneha", age: 24, hobbies: ["music", "reading"] },
+    { id: 5, name: "Vikas", age: 30, hobbies: ["gaming", "cricket"] }
+];
+
+
+// Q1
+// let userName = users.map((item, index) => {
+//     return item.name.toUpperCase()
+// })
+
+
+// Q2
+// let young = users[0].age
+
+// for (let i = 0; i < users.length; i++) {
+//     if (users[i].age <= young) {
+//         young = users[i].age
+//     }
+// }
+
+
+// let findYoungUser = users.filter((item) => item.age == young)
+// console.log(findYoungUser[0].name)
+
+// Q3.
+// let getData = users.map((itm, index) => {
+//     return itm.hobbies
+// })
+// let modify = getData.flat()
+
+// let filArr = []
+// for (let i = 0; i < modify.length; i++) {
+//     // console.log(modify[i])
+//     if (!filArr.includes(modify[i])) {
+//         filArr.push(modify[i])
+//     }
+// }
+// console.log(filArr)
+
+// Q4
+// let userInfo = []
+// let hobbiCount = users.map((item, index) => {
+//     return (
+//         userInfo.push({name:item.name, hob:item.hobbies.length})
+//     )
+// })
+// console.log(userInfo)
+
+// Q5
+// // Sort the users by age (ascending).
+//     users.sort((a,b)=>a.age-b.age)
+//     console.log(users)
+
+// Q6
+// Group users by whether their age is below 25 or 25 and above.
+// let belowAge = users.filter((item, index) => {
+//     return (
+//         item.age < 25
+//     )
+// })
+// let aboveAge = users.filter((item, index) => {
+//     return (
+//         item.age >= 25
+//     )
+// })
+
+// console.log(belowAge)
+// console.log(aboveAge)
+
+
+// Q7.Find if there is any user who has "cricket" as a hobby.
+// let cricketHobbi = []
+// for (let i = 0; i < users.length; i++) {
+//     // console.log(users[i])
+//     if (users[i].hobbies.includes("cricket")) {
+//         cricketHobbi.push(users[i].name)
+//     }
+// }
+// console.log(cricketHobbi)
+
+// Q8.Find the user with the longest name.
+// let onlyNameandLenghtArr = []
+// let longLength = 0
+
+// for (let i = 0; i < users.length; i++) {
+//     onlyNameandLenghtArr.push({ name: users[i].name, lenght: users[i].name.length })
+//     if (onlyNameandLenghtArr[i].name.length >= longLength) {
+//         longLength = onlyNameandLenghtArr[i].name.length
+//     }
+// }
+// let longName = []
+// for (let i = 0; i < onlyNameandLenghtArr.length; i++) {
+//     if(onlyNameandLenghtArr[i].lenght===longLength){
+//        longName.push(onlyNameandLenghtArr[i].name)
+//     }
+// }
+
+// console.log("The longest name is/are : " , longName)
+
+// Q9.Reverse the original users array without using reverse().
+// let revArr = []
+// for (let i = 0; i < users.length; i++) {
+//     revArr.unshift(users[i])
+// }
+// console.log(revArr)
+
+// Q10.Convert the final result of #9 into a string of names separated by " | ".
+// let onlyName = revArr.map((item, index) => { 
+//     return item.name
+// })
+// console.log(onlyName.join('|'))
+
+let arr1 = [1,2,3,4,5]
+let arr2 = [7,8]
+let arr3 = [7,8,6]
+console.log(arr1.concat(arr2,arr3))
